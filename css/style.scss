@@ -1,7 +1,11 @@
-$base-color: #1f84c6;
-
+$baseBgColor: #1f84c6;
+$baseBgColorDarken: #0072bb;
 
 // Base
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
 .noList {
     list-style: none;
     padding: 0;
@@ -9,7 +13,9 @@ $base-color: #1f84c6;
 }
 
 // Navigation
-
+.navbar {
+    background-color: $baseBgColorDarken;
+}
 .navbar-nav {
     ul {
         list-style: none;
@@ -18,6 +24,9 @@ $base-color: #1f84c6;
     }
     ul > li {
         display: inline-block;
+        a {
+            color: #fff;
+        }
     }
 }
 
@@ -32,16 +41,40 @@ $base-color: #1f84c6;
     margin: 15px 0;
 }
 .blockTitle {
-    background-color: $base-color;
+    background-color: $baseBgColor;
     color: #fff;
     padding: 10px 15px;
     border-radius: 5px;
     font-size: 24px;
 }
 
+// Bottom Banner
+
+.parallax-container {
+    position: relative;
+    height: 455px;
+    overflow: hidden;
+}
+  
+.parallax {
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    z-index: -1;
+}
+
+// projectDetailWrapper
+
+.projectDetailWrapper {
+    padding: 50px 0;
+    margin: 0;
+    background-color: $baseBgColorDarken;
+    color: #fff;
+}
+
 // Footer
 .footer {
-    background-color: $base-color;
+    background-color: $baseBgColor;
     color: #fff;
     font-size: 14px;
     .footerInfoWrapper {
@@ -58,5 +91,5 @@ $base-color: #1f84c6;
 .ccWrapper {
     text-align: center;
     padding: 15px 0;
-    background-color: #0072bb;
+    background-color: $baseBgColorDarken;
 }
