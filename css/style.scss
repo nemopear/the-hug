@@ -1,6 +1,7 @@
 $baseBgColor: #1f84c6;
 $baseBgColorDarken: #0072bb;
 
+//@import 'fonts';
 // Base
 body {
     font-family: 'Kanit', sans-serif;
@@ -12,10 +13,13 @@ body {
     margin: 0;
 }
 
-// Navigation
-.navbar {
-    background-color: $baseBgColorDarken;
+h1, h2, h3 {
+    font-family: 'Kanit';
+    font-weight: normal;
 }
+
+// Navigation
+
 .navbar-nav {
     ul {
         list-style: none;
@@ -23,12 +27,51 @@ body {
         margin: 0;
     }
     ul > li {
-        display: inline-block;
+        display: block;
         a {
-            color: #fff;
+            font-family: 'Kanit';
+            color: #333;
+            &.active {
+                color: $baseBgColor;
+            }
         }
     }
+
+    ul .socialMediaList {
+        a {
+            color: #333;
+        }
+    
+    }
 }
+
+.navbar-nav ul > li.socialMediaList {
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.navbar {
+    padding: 0;
+    .nav-item {
+        padding: 10px 15px;
+        border-bottom: 1px solid #eee;
+    }
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.logoWrapper {
+    text-align: left;
+    padding: 5px 15px;
+}
+
+.navbar-toggler {
+    float: right;
+}
+
+
 
 // topBanner
 .topBanner {
@@ -92,4 +135,68 @@ body {
     text-align: center;
     padding: 15px 0;
     background-color: $baseBgColorDarken;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px)  {  
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .logoWrapper {
+        text-align: center;
+    }
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+    .navbar-nav {
+        ul > li {
+            display: inline-block;
+            padding: 2px 0;
+            a {
+                &.active {
+                    text-decoration: underline;
+                    color: #fff;    
+                }
+            }
+        }
+        ul .socialMediaList {
+            a {
+                color: #fff;
+                &:hover, &.active {
+                    text-decoration: none; 
+                }
+            }
+        
+        }
+    }
+    .navbar {
+        background-color: $baseBgColorDarken;
+        padding: .5rem 1rem;
+        .nav-item {
+            border-bottom: 0;
+            color: #fff;
+            padding: 3px 15px;
+        }
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 30px;
+        padding-left: 30px;
+        border-right: 1px solid #31709B;
+    }
+
+    .navbar-nav ul > li.socialMediaList {
+        padding: 0 30px;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  
+
 }

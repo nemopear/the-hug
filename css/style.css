@@ -6,17 +6,43 @@ body {
   padding: 0;
   margin: 0; }
 
-.navbar {
-  background-color: #0072bb; }
+h1, h2, h3 {
+  font-family: 'Kanit';
+  font-weight: normal; }
 
 .navbar-nav ul {
   list-style: none;
   padding: 0;
   margin: 0; }
 .navbar-nav ul > li {
-  display: inline-block; }
+  display: block; }
   .navbar-nav ul > li a {
-    color: #fff; }
+    font-family: 'Kanit';
+    color: #333; }
+    .navbar-nav ul > li a.active {
+      color: #1f84c6; }
+.navbar-nav ul .socialMediaList a {
+  color: #333; }
+
+.navbar-nav ul > li.socialMediaList {
+  font-size: 18px;
+  padding: 10px 15px; }
+
+.navbar {
+  padding: 0; }
+  .navbar .nav-item {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee; }
+
+.navbar-brand {
+  font-size: 30px; }
+
+.logoWrapper {
+  text-align: left;
+  padding: 5px 15px; }
+
+.navbar-toggler {
+  float: right; }
 
 .topBanner {
   max-height: 435px;
@@ -64,5 +90,39 @@ body {
   text-align: center;
   padding: 15px 0;
   background-color: #0072bb; }
+
+@media (min-width: 992px) {
+  .logoWrapper {
+    text-align: center; }
+
+  .navbar-brand {
+    font-size: 30px; }
+
+  .navbar-nav ul > li {
+    display: inline-block;
+    padding: 2px 0; }
+    .navbar-nav ul > li a.active {
+      text-decoration: underline;
+      color: #fff; }
+  .navbar-nav ul .socialMediaList a {
+    color: #fff; }
+    .navbar-nav ul .socialMediaList a:hover, .navbar-nav ul .socialMediaList a.active {
+      text-decoration: none; }
+
+  .navbar {
+    background-color: #0072bb;
+    padding: .5rem 1rem; }
+    .navbar .nav-item {
+      border-bottom: 0;
+      color: #fff;
+      padding: 3px 15px; }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 30px;
+    padding-left: 30px;
+    border-right: 1px solid #31709B; }
+
+  .navbar-nav ul > li.socialMediaList {
+    padding: 0 30px; } }
 
 /*# sourceMappingURL=style.css.map */
