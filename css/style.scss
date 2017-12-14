@@ -28,6 +28,7 @@ h1, h2, h3 {
     }
     ul > li {
         display: block;
+        
         a {
             font-family: 'Kanit';
             color: #333;
@@ -56,6 +57,10 @@ h1, h2, h3 {
         padding: 10px 15px;
         border-bottom: 1px solid #eee;
     }
+    > .container {
+        width: 100%;
+        max-width: none;
+    }
 }
 
 .navbar-brand {
@@ -69,9 +74,18 @@ h1, h2, h3 {
 
 .navbar-toggler {
     float: right;
+    padding: 10px 0;
+    line-height: 0;
+    font-size: 0;
 }
 
+.hamburger {
+    display: inline-block;
+    width: 30px;
+    height: 24px;
+    background: url('../images/hamburger-menu.svg') no-repeat 0 0;
 
+}
 
 // topBanner
 .topBanner {
@@ -89,6 +103,21 @@ h1, h2, h3 {
     padding: 10px 15px;
     border-radius: 5px;
     font-size: 24px;
+}
+
+// Card teaser
+.card-title {
+    margin-bottom: 0;
+}
+
+// Credit card
+.creditCardSection {
+    text-align: center;
+    margin: 50px 0;
+    img {
+        max-width: 400px;
+        margin-bottom: 15px;
+    }
 }
 
 // Bottom Banner
@@ -139,11 +168,18 @@ h1, h2, h3 {
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {  
-
+    .card-deck .card {
+        flex: auto;
+        margin-bottom: 15px;
+    }
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px)  {  
+@media (min-width: 768px)  { 
+    .card-deck .card {
+        flex: 1 0 0;
+        margin-bottom: 0;
+    } 
 }
 
 // Large devices (desktops, 992px and up)
@@ -156,9 +192,12 @@ h1, h2, h3 {
     }
 
     .navbar-nav {
+        width: 100%;
+        ul { width: 100%;}
         ul > li {
             display: inline-block;
             padding: 2px 0;
+            width: 16%;
             a {
                 &.active {
                     text-decoration: underline;
@@ -189,6 +228,7 @@ h1, h2, h3 {
         padding-right: 30px;
         padding-left: 30px;
         border-right: 1px solid #31709B;
+        text-align: center;
     }
 
     .navbar-nav ul > li.socialMediaList {
