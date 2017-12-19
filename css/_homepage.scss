@@ -54,6 +54,9 @@ h1, h2, h3 {
         padding: 10px 15px;
         border-bottom: 1px solid #eee;
     }
+    > .container {
+        max-width: initial;
+    }
 }
 
 .navbar-brand {
@@ -79,8 +82,8 @@ h1, h2, h3 {
 
 .hamburger {
     display: inline-block;
-    width: 30px;
-    height: 24px;
+    width: 27px;
+    height: 21px;
     background: url('../images/hamburger-menu.svg') no-repeat 0 0;
 
 }
@@ -243,6 +246,9 @@ h1, h2, h3 {
             color: #fff;
             padding: 3px 15px;
         }
+        > .container {
+            max-width: 960px;
+        }
     }
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 25px;
@@ -261,5 +267,7 @@ h1, h2, h3 {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {  
-
+    .navbar > .container {
+        max-width: 1140px;
+    }
 }
