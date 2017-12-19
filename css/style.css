@@ -33,16 +33,16 @@ h1, h2, h3 {
   .navbar .nav-item {
     padding: 10px 15px;
     border-bottom: 1px solid #eee; }
-  .navbar > .container {
-    width: 100%;
-    max-width: none; }
 
 .navbar-brand {
   font-size: 30px; }
+  .navbar-brand img {
+    width: 185px;
+    height: 59px; }
 
 .logoWrapper {
   text-align: left;
-  padding: 5px 15px; }
+  padding: 10px 15px; }
 
 .navbar-toggler {
   float: right;
@@ -57,7 +57,6 @@ h1, h2, h3 {
   background: url("../images/hamburger-menu.svg") no-repeat 0 0; }
 
 .topBanner {
-  max-height: 435px;
   overflow: hidden; }
 
 .blockWrapper {
@@ -97,6 +96,15 @@ h1, h2, h3 {
   background-color: #0072bb;
   color: #fff; }
 
+.portfolios a {
+  color: #333;
+  text-decoration: none; }
+.portfolios .card-title {
+  font-size: 18px;
+  font-weight: normal; }
+.portfolios .card {
+  margin-bottom: 15px; }
+
 .footer {
   background-color: #1f84c6;
   color: #fff;
@@ -120,7 +128,10 @@ h1, h2, h3 {
 @media (min-width: 768px) {
   .card-deck .card {
     flex: 1 0 0;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+
+  .portfolios .card {
+    margin-bottom: 15px; } }
 @media (min-width: 992px) {
   .logoWrapper {
     text-align: center; }
@@ -135,8 +146,8 @@ h1, h2, h3 {
     .navbar-nav ul > li {
       display: inline-block;
       padding: 2px 0;
-      width: 16%; }
-      .navbar-nav ul > li a.active {
+      width: auto; }
+      .navbar-nav ul > li a:hover, .navbar-nav ul > li a.active {
         text-decoration: underline;
         color: #fff; }
     .navbar-nav ul .socialMediaList a {
@@ -153,9 +164,9 @@ h1, h2, h3 {
       padding: 3px 15px; }
 
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 30px;
-    padding-left: 30px;
-    border-right: 1px solid #31709B;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-right: 1px solid #fff;
     text-align: center; }
 
   .navbar-nav ul > li.socialMediaList {
@@ -167,7 +178,8 @@ h1, h2, h3 {
   background-position: center center;
   color: #fff;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  margin-bottom: 30px; }
   .titlebgBackground:before {
     content: '\00a0';
     position: absolute;
@@ -183,5 +195,86 @@ h1, h2, h3 {
 
 .content {
   padding: 50px 0; }
+
+.itemImg {
+  margin-bottom: 30px; }
+  .itemImg a {
+    display: block;
+    overflow: hidden;
+    position: relative; }
+    .itemImg a:after {
+      transition: all .2s ease-in-out;
+      content: '\00a0';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3); }
+    .itemImg a:hover:after, .itemImg a:focus:after, .itemImg a:active:after {
+      background-color: rgba(0, 0, 0, 0.1); }
+
+.itemOther {
+  margin-bottom: 15px;
+  clear: both;
+  overflow: hidden; }
+  .itemOther .imgWrapper {
+    width: 30%;
+    float: left;
+    margin-right: 15px; }
+  .itemOther .title {
+    font-size: 16px; }
+  .itemOther .date {
+    color: #555; }
+
+.sidebarTitle {
+  margin-bottom: 15px; }
+
+.pageTwoCol > .container .row > .col-md-8 {
+  border-right: 1px solid #eee; }
+.pageTwoCol .blockWrapper {
+  margin: 30px 0; }
+
+.card a {
+  display: block;
+  cursor: pointer; }
+  .card a .cardImageWrapper {
+    position: relative;
+    overflow: hidden; }
+    .card a .cardImageWrapper:after {
+      transition: all .2s ease-in-out;
+      content: '\00a0';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3); }
+    .card a .cardImageWrapper img {
+      transition: all 1s ease-in-out; }
+  .card a:hover .cardImageWrapper:after, .card a:active .cardImageWrapper:after, .card a:focus .cardImageWrapper:after {
+    background-color: rgba(0, 0, 0, 0.1); }
+  .card a:hover .cardImageWrapper img, .card a:active .cardImageWrapper img, .card a:focus .cardImageWrapper img {
+    transform: scale(1.1); }
+
+.tabDescription {
+  padding: 15px 0; }
+
+.serviceTab .nav-tabs {
+  border-bottom: 0;
+  margin: 30px 0 10px; }
+  .serviceTab .nav-tabs .nav-link {
+    border: 1px solid #1f84c6;
+    border-radius: 0;
+    margin-right: 15px; }
+    .serviceTab .nav-tabs .nav-link.active {
+      background-color: #1f84c6;
+      color: #fff; }
+
+.contactWrapper {
+  margin: 50px 0; }
+  .contactWrapper iframe {
+    max-width: 100%;
+    margin-top: 50px; }
 
 /*# sourceMappingURL=style.css.map */

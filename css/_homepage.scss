@@ -54,19 +54,19 @@ h1, h2, h3 {
         padding: 10px 15px;
         border-bottom: 1px solid #eee;
     }
-    > .container {
-        width: 100%;
-        max-width: none;
-    }
 }
 
 .navbar-brand {
     font-size: 30px;
+    img {
+        width: 185px;
+        height: 59px;
+    }
 }
 
 .logoWrapper {
     text-align: left;
-    padding: 5px 15px;
+    padding: 10px 15px;
 }
 
 .navbar-toggler {
@@ -86,7 +86,6 @@ h1, h2, h3 {
 
 // topBanner
 .topBanner {
-    max-height: 435px;
     overflow: hidden;
 }
 
@@ -141,6 +140,20 @@ h1, h2, h3 {
     color: #fff;
 }
 
+.portfolios {
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+    .card-title {
+        font-size: 18px;
+        font-weight: normal;
+    }
+    .card {
+        margin-bottom: 15px;
+    }
+}
+
 // Footer
 .footer {
     background-color: $baseBgColor;
@@ -177,6 +190,11 @@ h1, h2, h3 {
         flex: 1 0 0;
         margin-bottom: 0;
     } 
+    .portfolios {
+        .card {
+            margin-bottom: 15px;
+        }
+    }
 }
 
 // Large devices (desktops, 992px and up)
@@ -194,9 +212,9 @@ h1, h2, h3 {
         ul > li {
             display: inline-block;
             padding: 2px 0;
-            width: 16%;
+            width: auto;
             a {
-                &.active {
+                &:hover, &.active {
                     text-decoration: underline;
                     color: #fff;    
                 }
@@ -222,9 +240,9 @@ h1, h2, h3 {
         }
     }
     .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 30px;
-        padding-left: 30px;
-        border-right: 1px solid #31709B;
+        padding-right: 25px;
+        padding-left: 25px;
+        border-right: 1px solid #fff;
         text-align: center;
     }
 
