@@ -58,15 +58,16 @@ h1, h2, h3 {
 
 .navbar-brand {
     font-size: 30px;
+    padding: 0;
     img {
-        width: 185px;
-        height: 59px;
+        width: 85px;
+        height: 27px;
     }
 }
 
 .logoWrapper {
     text-align: left;
-    padding: 10px 15px;
+    padding: 0 15px;
 }
 
 .navbar-toggler {
@@ -204,6 +205,10 @@ h1, h2, h3 {
     }
     .navbar-brand {
         font-size: 30px;
+        img {
+            width: 185px;
+            height: 59px;
+        }
     }
 
     .navbar-nav {
@@ -248,6 +253,9 @@ h1, h2, h3 {
 
     .navbar-nav ul > li.socialMediaList {
         padding: 0 30px;
+    }
+    .logoWrapper {
+        padding: 10px 15px;
     }
 }
 

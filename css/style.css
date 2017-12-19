@@ -35,14 +35,15 @@ h1, h2, h3 {
     border-bottom: 1px solid #eee; }
 
 .navbar-brand {
-  font-size: 30px; }
+  font-size: 30px;
+  padding: 0; }
   .navbar-brand img {
-    width: 185px;
-    height: 59px; }
+    width: 85px;
+    height: 27px; }
 
 .logoWrapper {
   text-align: left;
-  padding: 10px 15px; }
+  padding: 0 15px; }
 
 .navbar-toggler {
   float: right;
@@ -138,6 +139,9 @@ h1, h2, h3 {
 
   .navbar-brand {
     font-size: 30px; }
+    .navbar-brand img {
+      width: 185px;
+      height: 59px; }
 
   .navbar-nav {
     width: 100%; }
@@ -170,7 +174,10 @@ h1, h2, h3 {
     text-align: center; }
 
   .navbar-nav ul > li.socialMediaList {
-    padding: 0 30px; } }
+    padding: 0 30px; }
+
+  .logoWrapper {
+    padding: 10px 15px; } }
 .titlebgBackground {
   padding: 100px 0;
   text-align: center;
