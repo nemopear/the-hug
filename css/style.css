@@ -61,6 +61,8 @@ h1, h2, h3 {
 
 .topBanner {
   overflow: hidden; }
+  .topBanner img {
+    width: 100%; }
 
 .blockWrapper {
   margin: 15px 0; }
@@ -73,7 +75,8 @@ h1, h2, h3 {
   font-size: 24px; }
 
 .card-title {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-size: 16px; }
 
 .creditCardSection {
   text-align: center;
@@ -123,6 +126,11 @@ h1, h2, h3 {
   text-align: center;
   padding: 15px 0;
   background-color: #0072bb; }
+
+.card-deck a {
+  color: #333; }
+  .card-deck a:hover, .card-deck a:active, .card-deck a:focus {
+    text-decoration: none; }
 
 @media (min-width: 576px) {
   .card-deck .card {
@@ -181,7 +189,10 @@ h1, h2, h3 {
     padding: 0 30px; }
 
   .logoWrapper {
-    padding: 10px 15px; } }
+    padding: 10px 15px; }
+
+  .card-title {
+    font-size: 24px; } }
 @media (min-width: 1200px) {
   .navbar > .container {
     max-width: 1140px; } }

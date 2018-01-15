@@ -91,6 +91,9 @@ h1, h2, h3 {
 // topBanner
 .topBanner {
     overflow: hidden;
+    img {
+        width: 100%;
+    }
 }
 
 // base block
@@ -108,6 +111,7 @@ h1, h2, h3 {
 // Card teaser
 .card-title {
     margin-bottom: 0;
+    font-size: 16px;
 }
 
 // Credit card
@@ -178,6 +182,15 @@ h1, h2, h3 {
     text-align: center;
     padding: 15px 0;
     background-color: $baseBgColorDarken;
+}
+
+.card-deck {
+    a {
+        color: #333;
+        &:hover, &:active, &:focus {
+            text-decoration: none;
+        }
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -262,6 +275,9 @@ h1, h2, h3 {
     }
     .logoWrapper {
         padding: 10px 15px;
+    }
+    .card-title {
+        font-size: 24px;
     }
 }
 
