@@ -122,6 +122,23 @@ h1, h2, h3 {
   .footer .title {
     font-size: 24px; }
 
+.owner-wrapper {
+  text-align: center;
+  max-width: 250px; }
+  .owner-wrapper .img-wrapper {
+    max-width: 180px;
+    margin-bottom: 7px;
+    position: relative; }
+    .owner-wrapper .img-wrapper .name {
+      margin-bottom: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.441);
+      color: #fff;
+      padding: 5px; }
+
 .ccWrapper {
   text-align: center;
   padding: 15px 0;
