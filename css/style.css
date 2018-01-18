@@ -173,11 +173,14 @@ h1, h2, h3 {
   .navbar-nav {
     width: 100%; }
     .navbar-nav ul {
-      width: 100%; }
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
     .navbar-nav ul > li {
       display: inline-block;
       padding: 2px 0;
-      width: auto; }
+      width: auto;
+      flex-grow: 1; }
       .navbar-nav ul > li a:hover, .navbar-nav ul > li a.active {
         text-decoration: underline;
         color: #fff; }

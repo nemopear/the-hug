@@ -249,11 +249,16 @@ h1, h2, h3 {
 
     .navbar-nav {
         width: 100%;
-        ul { width: 100%;}
+        ul { 
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
         ul > li {
             display: inline-block;
             padding: 2px 0;
             width: auto;
+            flex-grow: 1;
             a {
                 &:hover, &.active {
                     text-decoration: underline;
